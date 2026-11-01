@@ -21,12 +21,12 @@ O banco é iniciado com 243 lotes vazios nas faixas 100–180, 200–280 e 300�
 Requisitos: Node.js 20+ e um banco PostgreSQL próprio, local ou hospedado. **Não use a credencial de outro projeto ou o banco da demonstração.**
 
 ```bash
-git clone <URL-DESTE-REPOSITORIO>
+git clone https://github.com/Gabrielribeiropy/OBMEP-Checklist-Slots.git
 cd OBMEP-Checklist-Slots
 npm ci
 ```
 
-Copie `.env.example` para `.env.local` e substitua os valores de exemplo por uma URI de conexão **do seu banco**. A variável `DATABASE_URL` só deve existir no servidor. Não publique `.env.local`, senhas, backups nem dumps.
+Crie um banco vazio chamado `obmep_checklist` no seu PostgreSQL local (ou use um banco seu já preparado). Copie `.env.example` para `.env.local` e substitua os valores de exemplo por uma URI de conexão **do seu banco**. A conexão local em loopback pode ser sem TLS; conexões com hosts remotos exigem TLS. A variável `DATABASE_URL` só deve existir no servidor. Não publique `.env.local`, senhas, backups nem dumps.
 
 ```bash
 npm run db:migrate
