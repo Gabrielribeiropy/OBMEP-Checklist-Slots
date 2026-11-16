@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1733">
+  <meta name="description" content="Demonstração pública do checklist de lotes: dados fictícios, sem conexão com o sistema real.">
+  <title>Checklist de lotes | Demonstração</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a href="https://github.com/Gabrielribeiropy/OBMEP-Checklist-Slots">Gabriel Ribeiro <span>/ projeto independente</span></a><a href="https://github.com/Gabrielribeiropy/OBMEP-Checklist-Slots">Ver código ↗</a></header>
+  <main>
+    <section class="intro"><span class="eyebrow">DEMONSTRAÇÃO INTERATIVA · DADOS FICTÍCIOS</span><h1>Checklist de lotes</h1><p>Acompanhe as três confirmações em sequência. Experimente os filtros e avance os lotes sem criar conta nem alterar dados reais.</p><div class="notice">Projeto independente, sem vínculo ou endosso da OBMEP. Esta página funciona apenas no navegador; ao recarregar, os exemplos voltam ao início.</div></section>
+    <section class="dashboard" aria-label="Painel demonstrativo"><div class="section-head"><div><span class="eyebrow">VISÃO GERAL</span><h2>Andamento dos lotes</h2></div><button id="reset" type="button">Reiniciar demonstração</button></div><div id="stats" class="stats" aria-live="polite"></div><div class="toolbar"><label for="filter">Mostrar</label><select id="filter"><option value="all">Todos os lotes</option><option value="pending">Pendentes</option><option value="done">Concluídos</option></select><label for="search">Buscar lote</label><input id="search" type="search" inputmode="numeric" placeholder="Número do lote" maxlength="6"></div><div id="lots" class="lots"></div><p id="empty" class="empty" hidden>Nenhum lote encontrado para este filtro.</p></section>
+    <section class="explain"><span class="eyebrow">COMO FUNCIONA</span><h2>Uma confirmação por vez</h2><p>Provas → corretores e revisores → notas. Uma etapa só pode ser marcada após a anterior. Para desfazer, comece pela última etapa concluída.</p><p>O <a href="https://github.com/Gabrielribeiropy/OBMEP-Checklist-Slots">projeto completo</a> usa Next.js e PostgreSQL. Esta demonstração estática usa somente exemplos fictícios e não acessa API nem banco de dados.</p></section>
+  </main>
+  <footer>Gabriel Ribeiro · Software, interfaces e automação</footer>
+</body>
+</html>

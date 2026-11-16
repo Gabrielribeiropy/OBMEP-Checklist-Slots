@@ -6,6 +6,8 @@
 
 Projeto independente e **não oficial da OBMEP**. Foi criado para evitar a repetição da pistolagem de lotes já processados e permitir que uma equipe veja, em um único painel, quais lotes ainda precisam de cada confirmação. Não representa nem é endossado pela OBMEP.
 
+**[Experimentar a demonstração pública](https://gabrielribeiropy.github.io/OBMEP-Checklist-Slots/demo/)** — seis lotes fictícios, sem login, API ou banco de dados. As alterações existem apenas nesta página e são reiniciadas ao recarregar.
+
 O painel acompanha três etapas por lote, nesta ordem:
 
 1. **Provas:** confirma que as provas do lote foram pistoladas.
@@ -42,6 +44,8 @@ Leia o [relatório de funcionamento em português](docs/funcionamento.pt-BR.md) 
 ## English
 
 An independent, **unofficial OBMEP project**. It was built to prevent teams from processing a lot twice and to show which lots still need confirmation at each step. It is not affiliated with or endorsed by OBMEP.
+
+**[Try the public demo](https://gabrielribeiropy.github.io/OBMEP-Checklist-Slots/demo/)** — six fictional lots, with no login, API or database. Changes exist only on this page and reset on reload.
 
 The checklist follows three ordered steps per lot: **exam papers**, **graders and reviewers together in one confirmation**, and **student grade entry**. A later step unlocks only when the earlier steps are complete. Confirmations can be undone in reverse order. Incomplete lots can be soft deleted and restored. Counts, percentages, and filters reflect the active lots stored in the database, and the mobile view uses expandable lot cards.
 
